@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+killall -9 polybar
+if type "xrandr"; then
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    MONITOR=$m /root/.config/polybar/shades/launch.sh
+  done
+else
+  /root/.config/polybar/shades/launch.sh
+fi

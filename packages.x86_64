@@ -106,7 +106,16 @@ wpa_supplicant
 # Custom packages 
 systemd
 xorg
-xfce4
-xfce4-goodies
-lightdm
-lightdm-gtk-greeter
+xorg-xinit
+xorg-xrandr
+xterm
+i3-wm
+i3lock
+
+# programs 
+feh
+vim
+neovim
+terminator
+ranger
+polybar
